@@ -8,6 +8,9 @@ import { ContactPage } from '../pages/contact/contact';
 import { HomePage } from '../pages/home/home';
 import { TabsPage } from '../pages/tabs/tabs';
 import { ScheduledetailPage } from '../pages/scheduledetail/scheduledetail';
+import { SchedulePage } from '../pages/schedule/schedule';
+import { MapPage } from '../pages/map/map';
+import { SigninPage } from '../pages/signin/signin';
 
 import { StatusBar } from '@ionic-native/status-bar';
 import { SplashScreen } from '@ionic-native/splash-screen';
@@ -19,6 +22,9 @@ import { SplashScreen } from '@ionic-native/splash-screen';
     ContactPage,
     HomePage,
     TabsPage,
+    MapPage,
+    SigninPage,
+    SchedulePage,
     ScheduledetailPage
   ],
   imports: [
@@ -32,12 +38,15 @@ import { SplashScreen } from '@ionic-native/splash-screen';
     ContactPage,
     HomePage,
     TabsPage,
-    ScheduledetailPage
+    SchedulePage,
+    ScheduledetailPage,
+    SigninPage,
+    MapPage
   ],
   providers: [
     StatusBar,
     SplashScreen,
-    {provide: ErrorHandler, useClass: IonicErrorHandler}
+    { provide: ErrorHandler, useClass: IonicErrorHandler }
   ]
 })
-export class AppModule {}
+export class AppModule { }

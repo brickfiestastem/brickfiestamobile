@@ -1,14 +1,19 @@
 <ion-header>
   <ion-navbar>
-    <ion-title>Schedule</ion-title>
+    <ion-title>Brick Fiesta</ion-title>
   </ion-navbar>
 </ion-header>
 
 <ion-content>
-  <ion-list>
-    <button ion-item *ngFor="let item of items" (click)="itemSelected(item)">
-      {{ item.text }}
-    </button>
-    
-  </ion-list>
+    <ion-card>
+        <ion-img width="100%" height="80%" src="imgs/bf2018.png"></ion-img>
+        <ion-card-content>
+          <ion-card-title>
+            Brick Fiesta 2018
+            </ion-card-title>
+          <p>Welcome to Brick Fiesta.</p>
+          <p>This app will let you sign up for activities, volunteer, and check in AFOLs to activites you volunteer to run. 
+            You can also view the schedule and map for the convention.</p>
+        </ion-card-content>
+      </ion-card>
 </ion-content>
